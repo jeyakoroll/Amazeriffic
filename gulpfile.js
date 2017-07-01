@@ -15,7 +15,7 @@ const path_js_files = [
 
 const path_css_files = [
     './source/css/main.scss'
-]
+];
 
 gulp.task('dev_compress_js', function (cb) {
   pump([
