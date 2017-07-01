@@ -8,8 +8,11 @@ const main = function() {
     // $new_comment.text(comment_text); // append text in the node
     // $('.comments').append($new_comment); // view node in comments
 
-    const $new_comment = $('<p>').text($('.comment-input input').val());
+  let $new_comment = '';
+  if($('.comment-input input').val() !== '') {
+    $new_comment = $('<p>').text($('.comment-input input').val());
     $('.comments').append($new_comment);
+  }
 
   });
 };
