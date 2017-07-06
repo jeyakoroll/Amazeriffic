@@ -1,28 +1,59 @@
 .body {
+  width: 100%;
+  height: 100%;
   background: #1DD489;
   color: #fff;
   padding: 2%;
 }
+.header {
+  width: 19%;
+  margin: 0 auto;
+}
+.header__h1 {
+  width: 84%;
+  margin: 0 auto 5px;
+}
+.hendler {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
 .wrapper {
   // width: 378px;
   height: auto;
-  margin:50px auto;
+  width: 33%;
+  margin: 20px auto;
   padding: 10px;
   border-radius: 10px;
   background: #378EEE;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: flex-start;
+}
+.wrapper .content {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: center;
+  width: 100%;
+}
+.tabs {
+  margin: 1rem;
+  order: 0;
+  flex: 0 1 auto;
+  align-self: center;
 }
 .tabs a span {
 display: inline-block;
 border-radius: 5px 5px 0 0;
 width: 100px;
-margin-right: 10px;
+margin: 5px;
 text-align: center;
 background: #ddd;
 padding: 5px;
-}
-.tabs {
-  margin: 1rem;
 }
 .tabs a span.active {
 background: #eee;
@@ -40,7 +71,7 @@ background: #eee;
   margin: 1rem;
 }
 .button {
-  margin: 1.5% 0 0.5% 10%;
+  margin: 0 auto 3%;
   padding: 10px 30px;
   border-radius: 5px;
   &:hover {
@@ -50,8 +81,8 @@ background: #eee;
 }
 .input {
   padding-left: 1%;
-  margin-top: 1.5%;
-  width: 328px;
+  margin: 5px auto 15px;
+  width: 90%;
   height: 30px;
   color: #808080;
 }
